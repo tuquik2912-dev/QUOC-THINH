@@ -1,0 +1,18 @@
+:root { --ink:#202020; --muted:#66615a; --paper:#f7f4ed; --gold:#b18a45; --line:#e3ddd1; --white:#fffdf8; }
+* { box-sizing:border-box; } html { scroll-behavior:smooth; }
+body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); background:var(--paper); line-height:1.65; }
+header { background:var(--ink); color:var(--white); padding:18px 7%; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.logo { font-weight:700; letter-spacing:1.5px; } nav { display:flex; gap:22px; flex-wrap:wrap; }
+nav a { color:#eee8dc; text-decoration:none; font-size:.95rem; } nav a:hover,nav a.active { color:#d7b36e; }
+main { max-width:1050px; margin:auto; padding:64px 7% 90px; }
+.eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:3px; font-size:.8rem; font-weight:700; }
+h1 { font-size:clamp(2.5rem,6vw,5rem); line-height:1.08; margin:14px 0 22px; letter-spacing:-2px; }
+h2 { font-size:1.7rem; margin-top:0; } h3 { margin-bottom:8px; }
+.lead { color:var(--muted); font-size:1.15rem; max-width:700px; } .hero { padding:42px 0 56px; border-bottom:1px solid var(--line); }
+.quote { font-size:1.25rem; font-weight:700; border-left:3px solid var(--gold); padding:8px 0 8px 20px; margin:32px 0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin-top:28px; }
+.card { background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px; } .card p { color:var(--muted); margin-bottom:0; }
+.pill { display:inline-block; padding:6px 11px; margin:4px 5px 4px 0; border:1px solid var(--line); border-radius:99px; color:var(--muted); font-size:.9rem; }
+.btn { display:inline-block; margin-top:14px; padding:11px 18px; background:var(--gold); color:#171717; border-radius:7px; text-decoration:none; font-weight:700; }
+ul { padding-left:22px; } footer { background:var(--ink); color:#d9d2c6; text-align:center; padding:24px; font-size:.9rem; } small.note { color:var(--muted); }
+@media(max-width:600px) { header { padding:16px 6%; } nav { gap:14px; } main { padding:42px 6% 65px; } }
